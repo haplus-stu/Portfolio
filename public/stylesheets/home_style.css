@@ -1,0 +1,623 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{  
+  font-size: 16px;
+    font-family: "Noto Sans JP", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Arial, メイリオ, Meiryo, sans-serif;
+}
+
+.st_wrapper{
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+footer{
+  clear: both;
+  background-color: #000;
+  width: 100%;
+  height: 120px;
+}
+
+
+.contents{
+  color: #000;
+}
+
+.nav_container{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.nav_container .l_nav{
+  width: 100%;
+  display: flex;
+  padding-right: 50px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav_container .l_nav .nav_item{
+  display: inline-block;
+  margin: 2%;
+  text-decoration: none;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+.nav_container .l_nav .nav_item>a{
+  width: 100%;
+  text-align: center;
+  display: block;
+  overflow: hidden;
+  font-weight: 500;
+  line-height: 1;
+  font-size: 16px;
+}
+
+.nav_container .l_nav .nav_item>a::after{
+  color:#fff;
+  width: 100%;
+  position: absolute;
+  height: 2px;
+  bottom: 0;
+}
+
+
+#welcome{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.Profile{
+  text-align: center;
+  margin: auto;
+  width: 50%;
+}
+
+.about{
+  border: solid #000;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+h2{
+  text-align: center;
+  margin-top: 0px;
+}
+
+.tag_btn{
+  
+  display: block;
+  position: relative;
+  width: calc(50% - (12px * 2));
+  margin: auto;
+}
+
+#vim{
+ background-size: cover;
+  background-image: url('../images/vim-logo.png');
+}
+#github{
+  background-size: cover;
+  background-image: url('../images/octocat.png');
+}
+#code{
+  margin-right: 8px;
+  background-size: cover;
+  background-image: url('../images/code_logo.png');
+}
+
+#nodejs{
+  padding-left: 7px;
+  background-size: cover;
+  background-image: url('../images/node_logo.png');
+}
+#etc{
+  font-size: 25px;
+}
+
+
+
+
+
+@media screen and (max-width: 1199px){
+
+  .back_main{
+    width: 100%;
+    height: 60%;
+    position: relative;
+  }
+
+  .back_main img{
+    width: 100%;
+  }
+
+  .back_main .phrase{
+    position: absolute;
+    color: #F4F6F7;
+    top: 0;
+    left: 0;
+  }
+
+  .phrase{
+    width: 100%;
+    height: 150%;
+  }
+
+
+  #keyphra{
+    margin-top: 15%;
+    text-align: center;
+    font-weight: lighter;
+    letter-spacing: .8rem;
+    font-size: 1rem;
+  }
+
+
+  #welcome{
+    font-size: .5rem;
+    top: 50%;
+    width: 100%;
+    letter-spacing: .4rem;
+    text-align: center;
+  }
+
+  
+  #Profile{
+    margin-top: 80px;
+    margin-bottom: 50px;
+    font-size: 30px;
+  }
+
+  .Profile>.about>#my_logo{
+    border: double 5px rgb(231, 165, 104);
+    border-radius: 50%;
+    width:  90px;
+    height: 90px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 50px;
+    overflow: auto;
+    float:left;
+    background-size: cover;
+  }
+  
+  #my_explain{
+    overflow: auto;
+    font-size: 15px;
+    padding-right: 8px;
+    margin-bottom: 10px;
+  }
+
+  .about{
+    text-align: left;
+  }
+
+  .Profile{
+    width: 80%;
+  }
+  
+  #used_tools,#qualification{
+    text-align: center;
+    font-size: 30px;
+    margin-top:15%;
+    margin-bottom: 40px;
+  }
+
+  .tools_logo{
+    list-style-type: none;
+    text-align: center;
+    padding-bottom: 70px;
+  }
+
+  .qualification{
+    text-align:center;
+  }
+
+  #vim,#github,#code{
+    width: 60px;
+    height: 60px;
+  }
+
+  #nodejs{
+    width: 130px;
+    height: 60px;
+  }
+
+  .timer,.count,.qiita{
+    width: 300px;
+    height: 150px;
+  }
+
+  .tools_logo{
+    list-style-type: none;
+    text-align: center;
+    padding-bottom: 70px;
+  }
+  
+  li{
+    display: inline-block;
+  }
+
+  #category_work{
+    padding: 5vh 16px;
+    margin: auto;
+    max-width: 780px;
+    min-height: 30vh;
+    clear: both;
+    overflow: auto;
+  }
+
+  #works{
+    margin-bottom: 60px;
+  }
+  .timer{
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-image: url('../images/timer_sub.png');
+  }
+  
+  .count{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background-image: url('../images/coming\ soon.png');
+  }
+  
+  .qiita{ 
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  
+  .pjlayout{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .project{
+    float: left;
+    display: block;
+    transition: .3s;
+    margin: 18px 12px;
+    border-radius: 4px;
+    position: relative;
+    text-decoration: none;
+    background-color:#fff;
+    width: calc(50% - (12px * 2)); 
+    box-shadow: 0px 5px 16px #e0eded;
+  }
+  
+  @media screen and (max-width: 800px){
+    .project{
+      width: calc(100% - (6px * 2));
+    }
+  }
+  
+
+  .Details{
+    color: #393c5d;
+    box-sizing: border-box;
+    padding: 0px 24px 24px 24px;
+  }
+  
+  .tag{
+    margin:2px;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 8px;
+    font-weight: bold;
+    border-radius: 3px;
+    background-color: rgb(0, 159, 187);
+  }
+  .pjlayout h3{
+    margin:.6em 0;
+  }
+
+  .twitter{
+    float: right;
+    margin-top: 40px;
+    margin-right: 40px;
+  }
+
+  .twitter,.twitter>a>svg{
+    width: 24px;
+    height: 24px;
+    color: #fff;
+    background-size: cover;
+  }  
+}
+
+  
+
+
+  
+/*PC設定*/
+@media screen and (min-width: 1200px) {
+
+h2{
+  font-size: 40px;
+}
+
+.back_main{
+  width: 100%;
+  position: relative;
+}
+
+.back_main .phrase{
+  top: 0;
+  left: 0;
+  color: #F4F6F7;
+  position: absolute;
+}
+
+.back_main img{
+  width: 100%;
+}
+
+.nav_container{
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 100%;
+  position: absolute;
+}
+
+.nav_container .l_nav{
+  width: 100%;
+  display: flex;
+  padding-right: 50px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav_container .l_nav .nav_item{
+  margin: 3%;
+  display: inline-block;
+  text-decoration: none;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+.nav_container .l_nav .nav_item>a{
+  width: 100%;
+  text-align: center;
+  display: block;
+  overflow: hidden;
+  font-weight: 500;
+  line-height: 1;
+  font-size: 18px;
+}
+
+.nav_container .l_nav .nav_item>a::after{
+  color:#fff;
+  width: 100%;
+  position: absolute;
+  height: 2px;
+  bottom: 0;
+}
+
+.phrase{
+  height: 150%;
+  width: 100%;
+}
+
+#keyphra{
+  margin-top: 15%;
+  font-size: 4rem;
+  letter-spacing: 1rem;
+  text-align: center;
+  font-weight: lighter;
+}
+
+  #welcome{
+    font-size: 1.4rem;
+    letter-spacing: 1rem;
+    bottom: 13rem;
+    width: 100%;
+    font-weight: 500;
+    text-align: center;
+  }
+
+#Profile{
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.Profile{
+  padding-top: 30px;
+  padding-bottom: 60px;
+  font-size: 20px;
+}
+
+.about{
+  width: 70%;
+  margin-bottom: 4%;
+  padding:12px 4px;
+}
+
+#my_explain{
+  overflow: auto;
+  padding: 12px 30px;
+  margin-bottom: 15px;
+}
+
+
+.tag_btn{
+  padding: 20px 0px;  
+}
+
+.explain{
+  padding-top: 30px;
+
+}
+
+.Profile>.about>#my_logo{
+  border: double 5px rgb(231, 165, 104);
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin: 5rem 0 20px 2em;
+  background-size: cover;
+  float: left;
+}
+
+.qualification{
+  text-align:center;
+  font-size:1.4em;
+  margin-bottom:70px;
+}
+
+#used_tools,#qualification{
+  text-align: center;
+}
+
+.tools_logo{
+  list-style-type: none;
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+li{
+  display: inline-block;
+}
+
+#vim{
+  width: 60px;
+  height: 60px;
+  background-size: cover;
+  background-image: url('../images/vim-logo.png');
+}
+#github{
+  width: 60px;
+  height: 60px;
+  background-size: cover;
+  background-image: url('../images/octocat.png');
+}
+#code{
+  width: 60px;
+  height: 60px;
+  margin-right: 8px;
+  background-size: cover;
+  background-image: url('../images/code_logo.png');
+}
+
+#nodejs{
+  width: 200px;
+  height: 80px;
+  padding-left: 7px;
+  background-size: cover;
+  background-image: url('../images/node_logo.png');
+}
+#etc{
+  font-size: 25px;
+}
+
+#category_work{
+  padding: 5vh 16px;
+  margin: auto;
+  max-width: 780px;
+  min-height: 30vh;
+  clear: both;
+  overflow: auto;
+}
+
+
+#works{
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.timer{
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-image: url('../images/timer_sub.png');
+}
+
+.count{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background-image: url('../images/coming\ soon.png');
+}
+
+.qiita{
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+}
+
+
+.pjlayout{
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 770px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project{
+  border-radius: 4px;
+  background-color:#fff;
+  box-shadow: 0px 5px 16px #e0eded;
+  display: block;
+  margin: 18px 12px;
+  float: left;
+  position: relative;
+  width: calc(50% - (12px * 2));
+  text-decoration: none;
+}
+
+.Details{
+  padding: 0px 20px 20px 20px;
+  color: #393c5d;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.tag{
+  color: #fff;
+  font-weight: normal;
+  background-color: rgb(0, 159, 187);
+  margin:2px;
+  padding: 2px 8px;
+  border-radius: 3px;
+}
+.pjlayout h3{
+  margin:.8em 0;
+}
+
+  .twitter>a>svg{
+  color: #fff;
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+  float: right;
+  margin-top: 40px;
+  margin-right: 10%;
+
+    }
+
+
+
+  }
+
+ 
